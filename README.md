@@ -5,56 +5,60 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) hotel booking appli
 ## Features
 
 ### User Frontend
--   **Browse Rooms:** View a list of available hotel rooms.
--   **View Room Details:** See detailed information for each room.
--   **User Authentication:** Users can register and log in to their accounts.
--   **Book a Room:** Logged-in users can book a room for specific dates.
--   **View Bookings:** Logged-in users can view their past and upcoming bookings.
--   **Contact Form:** Users can send messages to the hotel administration.
+
+- **Browse Rooms:** View a list of available hotel rooms.
+- **View Room Details:** See detailed information for each room.
+- **User Authentication:** Users can register and log in to their accounts.
+- **Book a Room:** Logged-in users can book a room for specific dates.
+- **View Bookings:** Logged-in users can view their past and upcoming bookings.
+- **Contact Form:** Users can send messages to the hotel administration.
 
 ### Admin Panel
--   **Secure Login:** Admin has a separate, secure login.
--   **Room Management:**
-    -   Add new rooms with images, descriptions, and prices.
-    -   Update existing room details.
-    -   Remove rooms from the listing.
--   **Reservation Management:**
-    -   View all user reservations.
-    -   Remove reservations.
--   **Message Viewing:**
-    -   View all messages sent through the contact form.
+
+- **Secure Login:** Admin has a separate, secure login.
+- **Room Management:**
+  - Add new rooms with images, descriptions, and prices.
+  - Update existing room details.
+  - Remove rooms from the listing.
+- **Reservation Management:**
+  - View all user reservations.
+  - Remove reservations.
+- **Message Viewing:**
+  - View all messages sent through the contact form.
 
 ## Tech Stack
 
--   **Frontend:**
-    -   React
-    -   React Router
-    -   Tailwind CSS
-    -   Axios
-    -   React Toastify
--   **Backend:**
-    -   Node.js
-    -   Express.js
-    -   MongoDB (with Mongoose)
-    -   JSON Web Tokens (JWT) for authentication
-    -   Cloudinary for image storage
-    -   Multer for file uploads
--   **Admin Panel:**
-    -   React
-    -   React Router
-    -   Tailwind CSS
-    -   Axios
-    -   React Toastify
+- **Frontend:**
+  - React
+  - React Router
+  - Tailwind CSS
+  - Axios
+  - React Toastify
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB (with Mongoose)
+  - JSON Web Tokens (JWT) for authentication
+  - Cloudinary for image storage
+  - Multer for file uploads
+- **Admin Panel:**
+  - React
+  - React Router
+  - Tailwind CSS
+  - Axios
+  - React Toastify
 
 ## Getting Started
 
 ### Prerequisites
--   Node.js
--   npm
--   MongoDB Atlas account (or local MongoDB instance)
--   Cloudinary account
+
+- Node.js
+- npm
+- MongoDB Atlas account (or local MongoDB instance)
+- Cloudinary account
 
 ### Backend Setup
+
 1.  Navigate to the `backend` directory:
     ```bash
     cd backend
@@ -75,10 +79,11 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) hotel booking appli
     ```
 4.  Start the backend server:
     ```bash
-    npm start
+    npm run server
     ```
 
 ### Frontend Setup
+
 1.  Navigate to the `frontend` directory:
     ```bash
     cd frontend
@@ -97,6 +102,7 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) hotel booking appli
     ```
 
 ### Admin Panel Setup
+
 1.  Navigate to the `admin` directory:
     ```bash
     cd admin
@@ -117,27 +123,32 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) hotel booking appli
 ## API Endpoints
 
 ### Rooms (`/api/room`)
--   `POST /add`: Add a new room (admin only).
--   `GET /list`: Get a list of all rooms.
--   `GET /:id`: Get details for a single room.
--   `POST /remove`: Remove a room (admin only).
--   `POST /update`: Update a room (admin only).
+
+- `POST /add`: Add a new room (admin only).
+- `GET /list`: Get a list of all rooms.
+- `GET /:id`: Get details for a single room.
+- `POST /remove`: Remove a room (admin only).
+- `POST /update`: Update a room (admin only).
 
 ### Users (`/api/user`)
--   `POST /register`: Register a new user.
--   `POST /login`: Log in a user.
--   `GET /list`: Get a list of all users (admin only).
--   `POST /remove`: Remove a user (admin only).
+
+- `POST /register`: Register a new user.
+- `POST /login`: Log in a user.
+- `GET /list`: Get a list of all users (admin only).
+- `POST /remove`: Remove a user (admin only).
 
 ### Reservations (`/api/reservation`)
--   `POST /create`: Create a new reservation (user only).
--   `POST /list`: Get a list of reservations for the logged-in user (user only).
--   `GET /list-all`: Get a list of all reservations (admin only).
--   `POST /remove`: Remove a reservation (admin only).
+
+- `POST /create`: Create a new reservation (user only).
+- `POST /list`: Get a list of reservations for the logged-in user (user only).
+- `GET /list-all`: Get a list of all reservations (admin only).
+- `POST /remove`: Remove a reservation (admin only).
 
 ### Admin (`/api/admin`)
--   `POST /login`: Log in the admin.
+
+- `POST /login`: Log in the admin.
 
 ### Messages (`/api/message`)
--   `POST /create`: Create a new message from the contact form.
--   `GET /list`: Get a list of all messages (admin only).
+
+- `POST /create`: Create a new message from the contact form.
+- `GET /list`: Get a list of all messages (admin only).
